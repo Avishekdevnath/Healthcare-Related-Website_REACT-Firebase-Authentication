@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "picture": "https://i.ibb.co/4WL4yTN/1-devi-shetty-640.jpg",
+        "name": "Devi Prasad Shetty",
+        "designation": "Founder"
+    },
+    {
+        "id": 2,
+        "picture": "https://i.ibb.co/sVhvyTW/2-Dr-Ashok-Seth.jpg",
+        "name": "Dr. Ashok Seth",
+        "designation": "CEO"
+    },
+    {
+        "id": 3,
+        "picture": "https://i.ibb.co/bmjg8hW/3-Naresh-Trehan.jpg",
+        "name": "Dr. Naresh Trehan",
+        "designation": "CFO"
+    },
+    {
+        "id": 4,
+        "picture": "https://i.ibb.co/X38fDGN/4-Dr-Krishna-S-Iyer.jpg",
+        "name": "Dr. Krishna S Iyer",
+        "designation": "CTO"
+    }
+]

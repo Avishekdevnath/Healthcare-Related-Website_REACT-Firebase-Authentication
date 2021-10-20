@@ -1,0 +1,23 @@
+/* Style for contact page */
+.i-contact{
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.c-button{
+    background-color: coral;
+    color: white;
+    font-weight: bold;
+}
+.contact{
+    background-color: #ffffff;
+}
+
+.input-style{
+    border: 2px solid lightsalmon;
+}

@@ -1,0 +1,25 @@
+/* Style for Welcome */
+.welcome-style{
+    height: 93.5vh;
+    width: 100%;
+    background-image: url('https://i.ibb.co/PgT8Fnv/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(90%);
+}
+.Home-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-title{
+    color: black;
+    filter: brightness(100%);
+    font-size: 50px;
+}
+.welcome-btn{
+    background-color: coral;
+    color:white;
+    border-radius: 10px;
+    font-size: 1.4rem;
+}

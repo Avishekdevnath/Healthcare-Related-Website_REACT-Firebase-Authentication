@@ -1,0 +1,14 @@
+/* Style for about section */
+
+.img-style{
+    height: 250px;
+    width: 250px;
+}
+.about{
+    background-color:  #EAF991;
+}
+.btn-style{
+    background-color: #FCAE53;
+    color: #4A4848;
+    font-weight: bold;
+}
