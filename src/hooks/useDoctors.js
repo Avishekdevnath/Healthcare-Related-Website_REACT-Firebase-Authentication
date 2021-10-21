@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 
+// Code for useDoctors
 const useDoctors = () => {
     const [doctors, setDoctors] = useState([]);
     useEffect(() => {

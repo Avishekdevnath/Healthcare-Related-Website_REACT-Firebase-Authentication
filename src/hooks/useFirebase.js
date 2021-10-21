@@ -2,6 +2,8 @@ import { getAuth, updateProfile, signInWithPopup, GoogleAuthProvider, signOut, o
 import { useState, useEffect } from 'react';
 import initializeAuthentication from "../Firebase/firebase.init";
 
+
+// Code for useFirebase
 initializeAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState({});

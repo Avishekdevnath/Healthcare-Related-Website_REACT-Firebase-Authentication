@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 
+// Code for useServices
 const useServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {

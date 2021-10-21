@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
-
+import './HappyClients.css'
+// Code For Happy Clients Section
 const HappyClients = () => {
     const [clients, setClients] = useState([]);
     useEffect(() => {
@@ -17,7 +18,7 @@ const HappyClients = () => {
                         const { picture, name, description, id } = client;
                         return (<Col key={id}>
                             <Card className="h-100">
-                                <Card.Img variant="top" src={picture} className="rounded-circle mx-auto mt-3" style={{ width: '200px' }} />
+                                <Card.Img variant="top" src={picture} className="rounded-circle mx-auto mt-3 h-img" />
                                 <Card.Body>
                                     <Card.Title>{name}</Card.Title>
                                     <Card.Text>{description}</Card.Text>

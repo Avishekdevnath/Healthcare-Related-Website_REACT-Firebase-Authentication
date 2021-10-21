@@ -3,17 +3,12 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './Doctors.css'
 
-// Code for about section
+// Code for doctors section
 const Doctors = () => {
-    // const [ doctors, set doctors] = useState([])
-    // useEffect(() => {
-    //     fetch('./API/doctors.json')
-    //         .then(res => res.json())
-    //         .then(data => set doctors(data))
-    // }, [])
+
     const { doctors } = useAuth();
     return (
-        <div className="about">
+        <div className="doctor">
             <Container>
 
                 <div className="py-5">

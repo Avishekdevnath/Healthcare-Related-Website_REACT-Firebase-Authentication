@@ -2,6 +2,7 @@ import React from 'react';
 import './Faq.css';
 import faq from '../Faq/images/faq.svg';
 
+// Code for FAQ Section
 const Faq = () => {
     return (
         <div className="container-fluid bg-white py-5">

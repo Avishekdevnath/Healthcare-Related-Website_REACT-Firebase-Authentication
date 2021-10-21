@@ -3,6 +3,7 @@ import { Card, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
+// Code For Service section
 const Service = () => {
     const { serviceId } = useParams();
     const { services } = useAuth();

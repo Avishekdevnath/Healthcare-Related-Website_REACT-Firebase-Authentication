@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-// Code for top courses
+// Code for top doctors
 const TopDoctors = () => {
     const [doctors, setDoctors] = useState([]);
     useEffect(() => {

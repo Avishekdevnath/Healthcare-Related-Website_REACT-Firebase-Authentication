@@ -22,6 +22,7 @@ input[type=text], input[type=password] {
     cursor: grab;
     width: 48%;
 }
+/* Style For Signup */
 .signup {
     text-align:center;
 }

@@ -52,9 +52,7 @@ function App() {
             <Route exact path="/about">
               <About></About>
             </Route>
-            {/* <Route exact path="/contact">
-            <Contact></Contact>
-          </Route> */}
+
             <Route path="/contact">
               <Contact></Contact>
             </Route>

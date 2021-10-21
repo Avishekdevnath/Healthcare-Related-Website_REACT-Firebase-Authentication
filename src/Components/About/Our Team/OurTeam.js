@@ -1,15 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Row, Spinner } from 'react-bootstrap';
 import './OurTeam.css'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 
-// const facebook = <FontAwesomeIcon icon={['fab', 'facebook-f']} />
-// const facebook2 = <FontAwesomeIcon icon={faFacebookF} size="4x" className="text-success" />
-// const doctor = <FontAwesomeIcon icon={faUserMd} size="4x" className="text-success" />
-// const success = <FontAwesomeIcon icon={faHospitalUser} size="4x" className="text-success" />
-// const beds = <FontAwesomeIcon icon={faBed} size="4x" className="text-success" />
-
+// Code For Our Team
 const OurTeam = () => {
     const [members, setMembers] = useState([]);
     useEffect(() => {
@@ -34,7 +27,6 @@ const OurTeam = () => {
                                     <div className="card-image">
                                         <Card.Img variant="top" src={picture} style={{ height: '300px' }} />
                                         <Card.ImgOverlay className="overlay">
-                                            {/* <div>{facebook}</div> */}
                                         </Card.ImgOverlay>
                                     </div>
                                     <Card.Body>

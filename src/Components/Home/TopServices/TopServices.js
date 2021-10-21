@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-// Code for top courses
+// Code for top services
 const TopServices = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {

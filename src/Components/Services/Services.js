@@ -5,7 +5,7 @@ import useAuth from '../../hooks/useAuth';
 import './Services.css'
 
 
-
+// Code for Services
 const Services = () => {
 
 

@@ -3,11 +3,10 @@ import useDoctors from '../hooks/useDoctors';
 import useFirebase from '../hooks/useFirebase';
 import useServices from '../hooks/useServices';
 
+// Code For AuthProvider
 
 export const AuthContext = createContext();
-
 const AuthProvider = ({ children }) => {
-    // const { children } = props;
     const { services, setServices } = useServices();
     const { doctors, setDoctors } = useDoctors();
     const allContexts = useFirebase();

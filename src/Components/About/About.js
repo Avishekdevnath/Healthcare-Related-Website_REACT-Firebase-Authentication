@@ -6,12 +6,7 @@ import OurTeam from './Our Team/OurTeam';
 
 // Code for about section
 const About = () => {
-    // const [members, setMembers] = useState([])
-    // useEffect(() => {
-    //     fetch('./API/about.json')
-    //         .then(res => res.json())
-    //         .then(data => setMembers(data))
-    // }, [])
+
 
     return (
         <div className="about">

@@ -2,12 +2,11 @@ import React from 'react';
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-
 import './Login.css'
 
 const Login = () => {
     const { allContexts } = useAuth();
-    const { setUser, getEmail, getPassword, signInUsingGoogle, signInWithEmail, setIsLoading, setError } = allContexts;
+    const { setUser, getEmail, getPassword, signInUsingGoogle, signInWithEmail, setIsLoading } = allContexts;
     const location = useLocation();
     const history = useHistory();
 

@@ -3,6 +3,7 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
+// Code For Doctor
 const Doctor = () => {
 
     const { doctorId } = useParams();
