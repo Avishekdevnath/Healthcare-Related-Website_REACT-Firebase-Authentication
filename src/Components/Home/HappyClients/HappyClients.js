@@ -10,13 +10,13 @@ const HappyClients = () => {
     }, [])
     return (
         <div className="container">
-            <h1 className="my-5">Our Happy Clients</h1>
+            <h1 className="my-5 fw-bold">Our Happy Clients</h1>
             <Row xs={1} md={3} className="g-4 mb-5">
                 {
                     clients.map(client => {
                         const { picture, name, description, id } = client;
                         return (<Col key={id}>
-                            <Card>
+                            <Card className="h-100">
                                 <Card.Img variant="top" src={picture} className="rounded-circle mx-auto mt-3" style={{ width: '200px' }} />
                                 <Card.Body>
                                     <Card.Title>{name}</Card.Title>

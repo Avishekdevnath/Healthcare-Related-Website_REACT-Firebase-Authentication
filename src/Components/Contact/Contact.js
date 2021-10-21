@@ -15,7 +15,7 @@ const Contact = () => {
             <Container>
                 <div className="py-5">
                     <div className="pb-5 ">
-                        <h2>Contact us</h2>
+                        <h2 className="fw-bold">Contact us</h2>
                         <h4>Feel free to contact with us anytime.</h4>
                     </div>
                     <Row xs={1} md={3} className="mx-auto g-4 align-content-center justify-content-center">
@@ -57,7 +57,7 @@ const Contact = () => {
                         <h2 className="pb-4 ">Get in touch with us</h2>
                         <Form>
                             <div>
-                                <Form.Group className="mb-3" >
+                                <Form.Group className="mb-3 " >
                                     <Form.Control className="input-style" type="text" placeholder="Name" />
                                 </Form.Group>
 
@@ -70,7 +70,7 @@ const Contact = () => {
                                 </Form.Group>
 
 
-                                <Form.Group className="mb-3" controlId="formGridCity">
+                                <Form.Group className="mb-3 " controlId="formGridCity">
                                     <textarea className="form-control input-style" name="" id="" rows="10" placeholder="Your message here"></textarea>
                                 </Form.Group>
 

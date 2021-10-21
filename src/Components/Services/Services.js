@@ -1,17 +1,16 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
+
 import './Services.css'
 
-// Code for Courses
+
+
 const Services = () => {
 
-    const [Services, setServices] = useState([]);
-    useEffect(() => {
-        fetch('./API/services.json')
-            .then(res => res.json())
-            .then(data => setServices(data))
-    }, [])
+
+    const { services } = useAuth();
+
 
     return (
         <div className="py-5">
@@ -20,8 +19,9 @@ const Services = () => {
                 </h2>
                 <Row xs={1} md={4} className="g-4 container mx-auto py-5">
                     {
-                        Services
+                        services
                             .map(service => {
+
                                 const { picture, title, price, id, Description } = service;
                                 return (<Col key={id}>
                                     <Card className="card">
@@ -35,7 +35,8 @@ const Services = () => {
                                                 <p>{Description}</p>
                                             </div>
                                             <div>
-                                                <button className="btn btn-success">Book Now</button>
+
+                                                <Link to={`/service/${id}`}> <button className="btn btn-success">Book Now</button> </Link>
                                             </div>
                                         </Card.Body>
                                     </Card>
@@ -44,9 +45,9 @@ const Services = () => {
                     }
                 </Row>
             </Container>
-        </div>
+        </div >
     );
 };
 
-export default Services
-    ;
+export default Services;
+

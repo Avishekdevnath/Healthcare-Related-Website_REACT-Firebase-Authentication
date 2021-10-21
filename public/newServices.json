@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "picture": "https://i.ibb.co/cJQYyZ1/1-angiography.jpg",
+        "title": "Angiogram",
+        "price": 100,
+        "Description": "An angiogram is a special type of x-ray which uses contrast dye to look at your coronary arteries."
+    },
+    {
+        "id": 2,
+        "picture": "https://i.ibb.co/5905rJ7/2-Brain-Scan.jpg",
+        "title": "Brain scans",
+        "price": 100,
+        "Description": "Brain scans produce detailed images of the brain and can be used to detect conditions."
+    },
+    {
+        "id": 3,
+        "picture": "https://i.ibb.co/BwZqvhL/3-Blood-tests.jpg",
+        "title": "Blood tests",
+        "price": 10,
+        "Description": "Blood tests are a common way for healthcare professionals to assess your health. "
+    },
+    {
+        "id": 4,
+        "picture": "https://i.ibb.co/9gFPVJk/4-Echocardiogram.jpg",
+        "title": "Echocardiogram",
+        "price": 100,
+        "Description": "Also known as an echo, it's a non-invasive test which uses sound waves."
+    },
+    {
+        "id": 5,
+        "picture": "https://i.ibb.co/nrWYY6g/5-ecg-test.jpg",
+        "title": "ECG",
+        "price": 100,
+        "Description": "An ECG is a simple and useful test which records the rhythm, rate and electrical activity of your heart."
+    },
+    {
+        "id": 6,
+        "picture": "https://i.ibb.co/qDvNP96/6-Exercise-ECG.jpg",
+        "title": "Exercise ECG",
+        "price": 150,
+        "Description": "An exercise ECG aims to see how your heart works when you are exerting yourself."
+    },
+    {
+        "id": 7,
+        "picture": "https://i.ibb.co/Wgn0x89/7-genetic-test.jpg",
+        "title": "Genetic testing",
+        "price": 100,
+        "Description": "Genetic testing can be used to find out whether you have a specific altered gene or a genetic fault."
+    },
+    {
+        "id": 8,
+        "picture": "https://i.ibb.co/g7rZmd6/8-MRI.webp",
+        "title": "MRI",
+        "price": 150,
+        "Description": "Magnetic Resonance Imaging (MRI) is a way of creating detailed images of your internal organs."
+    },
+    {
+        "id": 9,
+        "picture": "https://i.ibb.co/1ZHC34J/9-Implantable-loop-recorders.jpg",
+        "title": "Implantable loop Recorders",
+        "price": 100,
+        "Description": "An ILR is a small device that records the electrical activity of your heart."
+    },
+    {
+        "id": 10,
+        "picture": "https://i.ibb.co/KW5xRBq/10-radionuclide-scanning.jpg",
+        "title": "Radionuclide tests",
+        "price": 70,
+        "Description": "Radionuclide tests are different types of tests performed to assess your heart condition."
+    },
+    {
+        "id": 11,
+        "picture": "https://i.ibb.co/VmjXkV3/11-Physical-assessment.jpg",
+        "title": "Physical assessment",
+        "price": 80,
+        "Description": "It helps your doctor decide whether you have a condition and if you need other tests."
+    },
+    {
+        "id": 12,
+        "picture": "https://i.ibb.co/vx7jvpq/12-ct-scan.jpg",
+        "title": "Myocardial perfusion scan",
+        "price": 100,
+        "Description": "CT angiography visualizes blockages inside the arteries."
+    }
+]

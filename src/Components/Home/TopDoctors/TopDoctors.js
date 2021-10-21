@@ -36,7 +36,8 @@ const TopDoctors = () => {
                                             <p>{designation}</p>
                                         </div>
                                         <div>
-                                            <button className="btn btn-style">Book Appointment</button>
+
+                                            <Link to={`/doctor/${id}`}> <button className="btn btn-style">Book Appointment</button></Link>
                                         </div>
                                     </Card.Body>
                                 </Card>

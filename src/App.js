@@ -6,49 +6,73 @@ import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import NotFound from './Components/NotFound/NotFound';
 import About from './Components/About/About';
-import Contact from './Components/Contact/Contact';
 import Login from './Components/Login/Login';
-// import Route from './Components/PrivateRoute/PrivateRoute';
 import Doctors from './Components/Doctors/Doctors';
 import Services from './Components/Services/Services';
+import AuthProvider from './context/AuthProvider';
+import SignUp from './Components/Signup/SignUp';
+import Service from './Components/Service/Service';
+import Contact from './Components/Contact/Contact';
+import Doctor from './Components/Doctor/Doctor';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+
+
 
 // Code for main or app section
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route exact path="/services">
-            <Services></Services>
-          </Route>
-          <Route path="/doctors">
-            <Doctors></Doctors>
-          </Route>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
+            <Route exact path="/services">
+              <Services></Services>
+            </Route>
+            <PrivateRoute path="/service/:serviceId">
+              <Service></Service>
 
-          <Route exact path="/about">
-            <About></About>
-          </Route>
-          {/* <Route exact path="/contact">
+            </PrivateRoute>
+
+            <Route path="/doctors">
+              <Doctors></Doctors>
+            </Route>
+            <PrivateRoute path="/doctor/:doctorId">
+              <Doctor></Doctor>
+            </PrivateRoute>
+
+
+            <Route exact path="/about">
+              <About></About>
+            </Route>
+            {/* <Route exact path="/contact">
             <Contact></Contact>
           </Route> */}
-          <Route path="/contact">
-            <Contact></Contact>
-          </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
 
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route exact path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="/signup">
+              <SignUp></SignUp>
+            </Route>
+
+            <Route exact path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

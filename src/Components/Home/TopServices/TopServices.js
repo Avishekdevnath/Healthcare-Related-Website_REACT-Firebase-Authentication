@@ -31,7 +31,7 @@ const TopServices = () => {
                                         <p>{Description}</p>
                                     </div>
                                     <div>
-                                        <button className="btn btn-success">Book Now</button>
+                                        <Link to={`/service/${id}`}> <button className="btn btn-success">Book Now</button> </Link>
                                     </div>
                                 </Card.Body>
                             </Card>

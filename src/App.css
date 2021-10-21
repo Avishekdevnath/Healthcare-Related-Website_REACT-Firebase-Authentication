@@ -11,6 +11,10 @@
 .m-logo{
   color: rgb(236, 118, 102);
   font-weight: bold;
+  font-size: 2rem;
+}
+.input-style{
+    border: 2px solid lightsalmon !important;
 }
 .nav-text{
     color: #fff;

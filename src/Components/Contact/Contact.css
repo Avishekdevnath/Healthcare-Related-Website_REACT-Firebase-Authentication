@@ -19,5 +19,5 @@
 }
 
 .input-style{
-    border: 2px solid lightsalmon;
+    border: 2px solid lightsalmon !important;
 }

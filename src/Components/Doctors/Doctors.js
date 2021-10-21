@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import './Doctors.css'
 
 // Code for about section
 const Doctors = () => {
-    const [members, setMembers] = useState([])
-    useEffect(() => {
-        fetch('./API/doctors.json')
-            .then(res => res.json())
-            .then(data => setMembers(data))
-    }, [])
-
+    // const [ doctors, set doctors] = useState([])
+    // useEffect(() => {
+    //     fetch('./API/doctors.json')
+    //         .then(res => res.json())
+    //         .then(data => set doctors(data))
+    // }, [])
+    const { doctors } = useAuth();
     return (
         <div className="about">
             <Container>
@@ -19,8 +20,8 @@ const Doctors = () => {
                     <h2 className="fw-bold">Our Top Doctors</h2>
                     <Row xs={1} md={4} className="g-4 container mx-auto py-5">
                         {
-                            members.map(member => {
-                                const { id, picture, name, designation, Speciality, Fee } = member;
+                            doctors.map(doctor => {
+                                const { id, picture, name, designation, Speciality, Fee } = doctor;
                                 return (
                                     <Col key={id}>
                                         <Card className="card">
@@ -35,10 +36,10 @@ const Doctors = () => {
                                                     </div>
                                                     <h6>Speciality: {Speciality}</h6>
                                                     <h6>Price: ${Fee} </h6>
-                                                    <p>{designation}</p>
                                                 </div>
                                                 <div>
-                                                    <button className="btn btn-style">Book Appointment</button>
+                                                    <Link to={`/doctor/${id}`}> <button className="btn btn-style">Book Appointment</button> </Link>
+
                                                 </div>
                                             </Card.Body>
                                         </Card>
